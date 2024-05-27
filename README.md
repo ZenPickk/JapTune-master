@@ -8,13 +8,13 @@
    - GitHub профіль: https://github.com/spxcexx
 
 2. **Богдан Рубанов / Bohdan Rubanov** (Full Stack Developer)
-   - GitHub профіль: [посилання]
+   - GitHub профіль: https://github.com/BohdanRubanov
 
 3. **Ринат Ткаченко / Rinat Tkachenko** (Full Stack Developer)
-   - GitHub профіль: [посилання]
+   - GitHub профіль: https://github.com/RinatUA
 
 4. **Ярослав Єрмаков / Yaroslav Ermakov** (Full Stack Developer)
-   - GitHub профіль: [посилання]
+   - GitHub профіль: https://github.com/ZenPickk
 
 ## Сторінки
 
