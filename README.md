@@ -4,7 +4,7 @@
 
 ## Учасники проєкту
 
-1. **Данил Колосов / Danil Kolosov** (Team Lead)
+1. **Данило Колосов / Danil Kolosov** (Team Lead)
    - GitHub профіль: https://github.com/spxcexx
 
 2. **Богдан Рубанов / Bohdan Rubanov** (Full Stack Developer)
