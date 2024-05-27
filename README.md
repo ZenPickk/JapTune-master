@@ -10,7 +10,7 @@
 2. **Богдан Рубанов / Bohdan Rubanov** (Full Stack Developer)
    - GitHub профіль: https://github.com/BohdanRubanov
 
-3. **Ринат Ткаченко / Rinat Tkachenko** (Full Stack Developer)
+3. **Рінат Ткаченко / Rinat Tkachenko** (Full Stack Developer)
    - GitHub профіль: https://github.com/RinatUA
 
 4. **Ярослав Єрмаков / Yaroslav Ermakov** (Full Stack Developer)
