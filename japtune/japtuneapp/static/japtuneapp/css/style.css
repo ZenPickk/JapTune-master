@@ -30,14 +30,14 @@ header{
     color: white;
     font-size: 40px;
     text-decoration: none;
-
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
 }
 .burger_menu_links a{
     color: white;
     text-decoration: none;
-
 }
-
 
 .burger_menu_links.showLinks{
     /* display: none; */
@@ -77,8 +77,6 @@ body main{
     justify-content: space-between;
     margin-top: 30px;
 }
-
-
 
 .text_in_main_page{
     color: white;
@@ -135,4 +133,62 @@ justify-content: end;
 }
 #header_left_side{
     width: 90%;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#footer_1{
+    display: grid;
+    width: 35%
+}
+
+#footer_2{
+    display: grid;
+    width: 30%;
+}
+
+.logofooter{
+    height:50px;
+    width: 50px;
+}
+
+/* .logofooterclass{
+    /* width:20%; */
+
+.logoandtext{
+    height: 50%;
+    width: 15%;
+}
+
+#yt {
+    height: 30%;
+    width: 12%;
+    border: 0.1em solid white;
+    border-radius: 10px;
+}
+
+#fb {
+    height: 35px;
+    width: 42px;
+
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+footer div a:hover {
+    color: rgb(2, 102, 220);
+    transition: all 0.3s ease;
+}
+
+footer #footer_1 {
+    width: 100px;
 }
