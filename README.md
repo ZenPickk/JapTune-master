@@ -38,3 +38,69 @@
 - Django
 - SQLite3
 - Bootstrap
+
+## Моделі
+
+### Brand
+
+Модель для назв брендів машин, які ми пропонуємо.
+
+```python
+from django.db import models
+
+class Brand(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+```
+- **name:** Назва бренду машини.
+- **max_length**: максимальна кількість символів для назви бренду.
+- **unique=True**: дає цьому рядку унікальність. Це означає, що створити два записи з однаковим значенням поля **name** - неможливо.
+
+###
+
+### CarModel
+
+Модель для назв моделей машин, які ми пропонуємо.
+
+```python 
+from django.db import models
+
+class CarModel(models.Model):
+    name = models.CharField(max_length=255)
+    brand = models.ForeignKey(Brand, related_name='models', on_delete=models.CASCADE)
+```
+
+- **name:** Назва моделі машини.
+- **max_length:** Максимальна кількість символів для назви моделі.
+- **brand:** Зовнішній ключ, що посилається на модель Brand.
+- **related_name='models':** Дозволяє доступ до всіх моделей, що належать до конкретного бренду через атрибут models у моделі Brand.
+- **on_delete=models.CASCADE:** Визначає, що станеться з моделями машин при видаленні відповідного бренду. У даному випадку, всі моделі машин будуть видалені разом з брендом.
+
+###
+
+### CarVariant
+
+Модель для різних варіантів (версій) машин.
+
+```python
+from django.db import models
+
+class CarVariant(models.Model):
+    model = models.ForeignKey(CarModel, related_name='variants', on_delete=models.CASCADE)
+    year = models.IntegerField()
+    generation = models.CharField(max_length=255)
+    image = models.ImageField(null=True, blank=True)
+```
+
+- **model:** Зовнішній ключ, що посилається на модель CarModel.
+- **related_name='variants':** Дозволяє доступ до всіх варіантів, що належать до конкретної моделі через атрибут variants у моделі CarModel.
+- **on_delete=models.CASCADE:** Визначає, що станеться з варіантами машин при видаленні відповідної моделі. У даному випадку, всі варіанти машин будуть видалені разом з моделлю.
+- **year:** Рік випуску варіанту машини.
+- **generation:** Покоління варіанту машини.
+- **max_length:** Максимальна кількість символів для назви покоління.
+- **image:** Поле для завантаження зображення варіанту машини.
+- **null=True:** Дозволяє зберігати порожні значення у базі даних.
+- **blank=True:** Дозволяє форму залишати це поле порожнім.
+
+(Поле **image** було створено після проведення міграцій, тому має атрибути **null=True:** та **blank=True:**)
+
+###
