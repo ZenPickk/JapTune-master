@@ -192,3 +192,8 @@ footer div a:hover {
 footer #footer_1 {
     width: 100px;
 }
+
+body header .burger_menu_links .container #rows .col-3 a:hover {
+    color: rgb(2, 102, 220);
+    transition: all 0.3s ease;
+}
